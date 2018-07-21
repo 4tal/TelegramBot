@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-
 //Learn how to add an array/object for the previous states.
 var UserStatesSchema = new Schema({
     UserName: String,
@@ -9,4 +8,4 @@ var UserStatesSchema = new Schema({
     PreviousStats: String
 });
 
-module.exports = mongoose.model('BotUser',BotUsersSchema);
+module.exports = mongoose.model('UserState',UserStatesSchema);
