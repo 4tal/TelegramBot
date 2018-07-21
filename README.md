@@ -3,7 +3,7 @@
 Main:
 1. node app.js
 
-*The app.js will use the aux DataAccessClass to comunicate with the Mongo.
+*The app.js will use the aux DataAccessClass to communicate with the Mongo.
 
 
 Didn't upload the configuration.js so just create a configurations.js with:
