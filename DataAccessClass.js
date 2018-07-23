@@ -14,7 +14,10 @@ var mongoDB = configurations.mongoDBConnectionString;
 //Try to use the options for optional parameters.
 function addUserToDB(userName,password,userID){
     cryptr = new Cryptr(configurations.secretForEncryption);
+    //In case we want to save the password (we can also do it with hash so we will not see the password).
     const encryptedPassword = cryptr.encrypt(password);
+
+
 
     //Make sure it fits to the model.
     Task.create({
